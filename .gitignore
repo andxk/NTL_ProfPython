@@ -1,0 +1,4 @@
+*.7z
+__pycache__
+test*
+homework.url
