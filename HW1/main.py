@@ -8,7 +8,7 @@ if __name__ == '__main__':
 
     print(datetime.date(datetime.now()))
 
-    get_employees(1)
+    get_employees(6)
 
     sal = Salary(30000)
     sal.calculate_salary(15)
