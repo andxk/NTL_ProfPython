@@ -1,5 +1,4 @@
 
-
 class FlatIterator:
 
     def __init__(self, list_of_list):
@@ -7,40 +6,30 @@ class FlatIterator:
 
 
     def __iter__(self):
-        self.idx = 0    # текущий индекс элемента
-        self.cnt = -1   # счетчик для поиска
+        self.s = [self.data] # храним путь к текущему элементу
+        self.idx = [-1] # храним индексы вхождений в подсписки и индекс текущего элемента
         return self
 
 
-    def get_elem(self, s):
-        # Перебираем списки пока не насчитаем нужный порядковый номер элемента
-        for e in s:
-            if isinstance(e, list):
-                x = self.get_elem(e)
-                if x != e:      # элемент найден
-                    return x
-                else:           # локальный список закончился
-                    continue
-            else:
-                self.cnt += 1
-                if self.cnt >= self.idx:
-                    self.idx += 1
-                    self.cnt = -1
-                    return e    # найденный элемент всегда выходит из этого места
-                else:
-                    continue
-
-        if s == self.data:
-            raise StopIteration
-        else:
-            return s # индикатор конца локального списка
-
-
     def __next__(self):
-        item = self.get_elem(self.data)
+        while(True): # входим в подсписки, пока не найдем простой элемент
+            self.idx[-1] += 1
 
-        return item
+            while self.idx[-1] >= len(self.s[-1]): # список на этом уровне закончился
+                del self.idx[-1] # поднимаемся на уровень выше
+                del self.s[-1]
+                if len(self.idx) == 0: # список путей закончился
+                    raise StopIteration
+                    return
+                else:
+                    self.idx[-1] += 1
 
+            item = self.s[-1][self.idx[-1]]
+            if isinstance(item, list): # нашли списко среди элементов
+                self.s.append(item)
+                self.idx.append(-1)
+            else:
+                return item
 
 
 
@@ -52,8 +41,8 @@ def test_3():
         [1, 2, None, [[[[['!']]]]], []]
     ]
 
-
-##    for s in FlatIterator(list_of_lists_2): print(s)
+##    for s in FlatIterator(list_of_lists_2):
+##        print(s)
 
 
     for flat_iterator_item, check_item in zip(
