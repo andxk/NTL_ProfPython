@@ -3,4 +3,5 @@ __pycache__
 test*
 homework.url
 .~*
+*.log
 
