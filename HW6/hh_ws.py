@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 import re
 from pprint import pprint
 import json
+import keyboard
 
 
 ## КОНСТАНТЫ:
@@ -15,18 +16,23 @@ SITE_MAIN = "https://spb.hh.ru"
 OUT_FILE_NAME = 'vacancies.json'
 
 ## ОПЦИИ
-MAX_PAGES = 3          # Макс. количество обрабатываемых страниц или 0=ВСЕ
-PRINT_VAC = 1          # Вывод на экран
+MAX_PAGES = 20        # Макс. количество обрабатываемых страниц или 0=ВСЕ
+PRINT_VAC = 1         # Вывод на экран
+
+
+err_cnt = 0           # Счетчик ошибок
 
 
 def exceptor(func):
-    def wrapper (*args, **kwargs):
+    def __wrapper (*args, **kwargs):
+        global err_cnt
         try:
             return func(*args, **kwargs)
         except:
             print (f'---- Произошла ошибка в функции "{func.__name__}()"\n')
+            err_cnt += 1
             return None
-    return wrapper
+    return __wrapper
 
 
 
@@ -47,15 +53,12 @@ def vacancy_data(link, keywords=None):
 ##    desc = soup.find("div", class_="main-content")
     desc = soup.find("div", class_="vacancy-description")
 ##    desc = soup.find("div", attrs = {"data-qa": "vacancy-description"})
-##    vacancy_ok = desc.find(string = re_keywords) != None  if desc else False
 
     result = None
 
     if desc:
         key_str = desc.find(string = keywords)
         if key_str:
-##        if desc.find(string = keywords):
-##        if desc.find(string = re_keywords):
             company = soup.find("a", attrs = {"data-qa": "vacancy-company-name"})
             company = company.find("span").text
 
@@ -66,10 +69,6 @@ def vacancy_data(link, keywords=None):
             if not city:
                 city = soup.find("span",  attrs = {"data-qa": "vacancy-view-raw-address"})
             city = city.text if city else 'Город не обнаружен'
-
-##            print(salary)
-##            print(company)
-##            print(city)
 
             result = {
                 "salary" : salary,
@@ -92,9 +91,14 @@ if __name__ == '__main__':
     site = SITE
     page = 0
     data = []
+    err_cnt = 0
+    app_terminate = False
 
-    while page < MAX_PAGES or MAX_PAGES == 0:
+    while (page < MAX_PAGES or MAX_PAGES == 0) and not app_terminate:
         soup = get_soup(site)
+        if not soup:
+            continue
+
         vacancy_list_tag = soup.find("main", class_="vacancy-serp-content")
         if not vacancy_list_tag:
             break
@@ -111,7 +115,7 @@ if __name__ == '__main__':
             res = vacancy_data(link, re_keywords)
             if res:
                 res["title"] = title
-                res["link"] = link
+                res["link"] = link[:(str(link).find('?'))]
                 if PRINT_VAC:
                     print(res["title"])
                     print(res["link"])
@@ -121,6 +125,12 @@ if __name__ == '__main__':
                     print()
                 data.append(res)
 
+            if keyboard.is_pressed('q'):
+                print('Прерывание работы')
+                app_terminate = True
+                break
+##                exit()
+
         next_page = soup.find("a", attrs = {"data-qa": "pager-next"})
         if next_page:
             site = urljoin(SITE_MAIN, next_page.attrs['href'])
@@ -128,11 +138,12 @@ if __name__ == '__main__':
             break
 
     jdata = {'keywords':keywords, 'vacancies':data}
-    with open(OUT_FILE_NAME, 'w') as file:
+    with open(OUT_FILE_NAME, 'w', encoding='UTF-8') as file:
         json.dump(jdata, file, ensure_ascii=False, indent=4)
 
 ##    pprint(jdata)
 
     print (f'Сохранено {len(data)} вакансий c {page} страниц в файл "{OUT_FILE_NAME}"')
+    print (f'Ошибок {err_cnt}')
 
 
