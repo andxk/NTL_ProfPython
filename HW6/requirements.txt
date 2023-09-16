@@ -1,0 +1,6 @@
+fake_headers
+requests
+bs4
+urllib3
+lxml
+

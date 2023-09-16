@@ -1,0 +1,237 @@
+{
+    "keywords": "Django|Flask",
+    "vacancies": [
+        {
+            "salary": "ЗП засекречена",
+            "company": "АНО ЦИСМ",
+            "city": "Москва",
+            "keystr": "Опыт работы с Django. Знание особенностей orm-а, лучших практик и проблем.",
+            "title": "Python-разработчик",
+            "link": "https://spb.hh.ru/vacancy/82532098?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "от 100 000 до 150 000 ₽ на руки",
+            "company": "Qualitica",
+            "city": "Москва",
+            "keystr": "Обычный стек технологий проектов - Python/Django REST + PostgreSQL, Linux, GIT для",
+            "title": "Python-разработчик",
+            "link": "https://spb.hh.ru/vacancy/85232574?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "ЗП засекречена",
+            "company": "Сбер. IT",
+            "city": "Москва",
+            "keystr": "Django Framework",
+            "title": "Python Developer",
+            "link": "https://spb.hh.ru/vacancy/81905757?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "до 420 000 ₽ на руки",
+            "company": "Точка",
+            "city": "Москва",
+            "keystr": "Делаем много проектов на asyncio, aiohttp, fastapi. Есть возможность работать с kubernetes, consul, vault. Реже используем django и flask.",
+            "title": "Python-разработчик",
+            "link": "https://spb.hh.ru/vacancy/86085894?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "ЗП засекречена",
+            "company": "ООО ЭСАНС",
+            "city": "Москва",
+            "keystr": "Знание какого-либо из популярных Python-фреймворков (Django(приоритет)",
+            "title": "Senior Python Developer",
+            "link": "https://spb.hh.ru/vacancy/86187400?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "ЗП засекречена",
+            "company": "HR Prime",
+            "city": "Москва",
+            "keystr": "Django Framework",
+            "title": "Team Lead Python",
+            "link": "https://spb.hh.ru/vacancy/86181678?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "от 180 000 до 250 000 ₽ на руки",
+            "company": "ООО Астрософт Про",
+            "city": "Москва",
+            "keystr": "Django + Django-admin, DRF",
+            "title": "Fullstack программист Python/Rust",
+            "link": "https://spb.hh.ru/vacancy/86384316?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "до 180 000 ₽ на руки",
+            "company": "Наймиум",
+            "city": "Санкт-Петербург",
+            "keystr": "У тебя есть опыт разработки веб-проектов с использованием Django REST Framework от 4 лет;",
+            "title": "Backend Middle+ Python разработчик",
+            "link": "https://spb.hh.ru/vacancy/86103187?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "ЗП засекречена",
+            "company": "ООО АСВ-Альянс",
+            "city": "Москва, Деловой центр, Деловой центр, Деловой центр, Международная, Пресненская набережная, 12",
+            "keystr": "Backend Python Developer (Django) ",
+            "title": "Middle+/Senior Backend Developer (Python)",
+            "link": "https://spb.hh.ru/vacancy/85945302?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "от 120 000 до 180 000 ₽ на руки",
+            "company": "ООО Телеформ ИС",
+            "city": "Москва, Дербеневская набережная, 11",
+            "keystr": "опыт коммерческой разработки на Django;",
+            "title": "Python Developer",
+            "link": "https://spb.hh.ru/vacancy/83617001?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "ЗП засекречена",
+            "company": "Tevian (ООО Технологии видеоанализа)",
+            "city": "Москва, улица Ефремова, 10с1к4/5",
+            "keystr": "знание одного из фреймворков: Django, Flask, AIOHTTP, Sanic, FastAPI;",
+            "title": "Middle Backend разработчик (Python + Golang)",
+            "link": "https://spb.hh.ru/vacancy/86204821?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "ЗП засекречена",
+            "company": "RU-CENTER Group",
+            "city": "Москва",
+            "keystr": "Опыт работы с Django, Django Rest Framework",
+            "title": "Python-разработчик (middle+)",
+            "link": "https://spb.hh.ru/vacancy/85876809?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "ЗП засекречена",
+            "company": "ИП Пермякова Марина Сергеевна ​​",
+            "city": "Москва",
+            "keystr": "- Опыт работы с Python 3.8, asyncio (async/await), веб-фреймворками (aiohttp/fastAPI/flask/Django), Aiogram (фреймворк для разработки телеграм ботов), ORM (peewee, Django ORM)",
+            "title": "Python Senior Разработчик",
+            "link": "https://spb.hh.ru/vacancy/85330711?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "от 250 000 ₽ на руки",
+            "company": "Триафлай",
+            "city": "Москва, Кузнецкий мост, улица Кузнецкий Мост, 19с1",
+            "keystr": "Python, Linux, Django, Celery, Daphne, Redis, Rabbitmq, Pandas",
+            "title": "Backend разработчик (Python)",
+            "link": "https://spb.hh.ru/vacancy/86061882?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "ЗП засекречена",
+            "company": "ПИК",
+            "city": "Москва",
+            "keystr": " 3.x и Django REST Framework",
+            "title": "Ведущий разработчик Python",
+            "link": "https://spb.hh.ru/vacancy/86777109?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "от 200 000 ₽ на руки",
+            "company": "ООО ЛИГРЕС",
+            "city": "Санкт-Петербург, Выборгская, Площадь Ленина, Большой Сампсониевский проспект, 28к2",
+            "keystr": "Знал Django на высоком уровне. Понимание принципа работы моделей, менеджеров. Хорошее знание вебовской части (views, urls). Умение пользоваться модулем с настройками. У нас есть Rest Framework, но в ограниченном виде, без связи с моделями. Поэтому если вы не работали с DRF, но есть опыт с Flask/FastAPI, то все ок;",
+            "title": "Senior Python developer",
+            "link": "https://spb.hh.ru/vacancy/85569487?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "ЗП засекречена",
+            "company": "ООО Открытые решения",
+            "city": "Москва",
+            "keystr": "отличные знания фреймворка Django;",
+            "title": "Senior Python Developer",
+            "link": "https://spb.hh.ru/vacancy/86768073?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "ЗП засекречена",
+            "company": "Доктор Веб",
+            "city": "Санкт-Петербург, Горьковская",
+            "keystr": "Опыт работы с Flask, AIOHTTP;",
+            "title": "Python Back-end Разработчик / Python Back-end Developer",
+            "link": "https://spb.hh.ru/vacancy/46823861?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "ЗП засекречена",
+            "company": "Lesta Games",
+            "city": "Москва, Савёловская, Савёловская, Савёловская",
+            "keystr": "Опыт работы с Django;",
+            "title": "Python Developer (Infrastructure)",
+            "link": "https://spb.hh.ru/vacancy/84644126?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "от 230 000 ₽ на руки",
+            "company": "Российское общество Знание",
+            "city": "Москва, Пятницкая улица, 74с1",
+            "keystr": " в поиске сильных Python (django) разработчиков для работы над новой контент-платформой.",
+            "title": "Python-разработчик (Django)",
+            "link": "https://spb.hh.ru/vacancy/85750242?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "от 270 000 до 300 000 ₽ на руки",
+            "company": "Quiet Media",
+            "city": "Москва, улица Большая Ордынка, 54с2",
+            "keystr": "Опыт работы хотя бы с одним фреймворкам (Flask/FastAPI/etc);",
+            "title": "Python Разработчик",
+            "link": "https://spb.hh.ru/vacancy/86724665?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "ЗП засекречена",
+            "company": "Corporate Performance Systems",
+            "city": "Москва",
+            "keystr": "В твоих силах реализовать решения компании на самых современных платформах: Django, FastAPI, RabbitMQ, PostgreSQL, Clickhouse и другие",
+            "title": "Python разработчик",
+            "link": "https://spb.hh.ru/vacancy/86003974?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "ЗП засекречена",
+            "company": "ООО АВ Софт",
+            "city": "Москва, Окружная, Гостиничная улица, 5",
+            "keystr": "• Опыт работы с Flask, Docker, RabbitMQ",
+            "title": "Программист Python",
+            "link": "https://spb.hh.ru/vacancy/84001239?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "ЗП засекречена",
+            "company": "«РОСБАНК»",
+            "city": "Москва",
+            "keystr": "Знание современных фреймворков (Django обязательно, FastAPI, Flask или подобных желательно);",
+            "title": "Python developer",
+            "link": "https://spb.hh.ru/vacancy/85299799?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "ЗП засекречена",
+            "company": "Группа Самолет",
+            "city": "Москва",
+            "keystr": " (Django) разработчика",
+            "title": "Senior Python (Django) разработчик",
+            "link": "https://spb.hh.ru/vacancy/86583997?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "ЗП засекречена",
+            "company": "Алабуга. IT-Разработка игр",
+            "city": "Санкт-Петербург",
+            "keystr": "Опыт работы с Django/Sanic/Tornado/FastApi",
+            "title": "Middle Backend-разработчик (Python)",
+            "link": "https://spb.hh.ru/vacancy/86631656?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "от 170 000 до 265 000 ₽ на руки",
+            "company": "Decart IT-production",
+            "city": "Москва",
+            "keystr": "- Знание Django/Drf будет плюсом (не критично)",
+            "title": "Python разработчик",
+            "link": "https://spb.hh.ru/vacancy/85989567?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "ЗП засекречена",
+            "company": "ООО БиАйЭй-Технолоджиз",
+            "city": "Москва, Кутузовская, Поклонная улица, 3",
+            "keystr": "Опыт разработки на Python от 3 лет (начиная с 3.6+, Django, DRF)",
+            "title": "Python Developer",
+            "link": "https://spb.hh.ru/vacancy/86704610?from=vacancy_search_list&query=python"
+        },
+        {
+            "salary": "ЗП засекречена",
+            "company": "Eqvanta",
+            "city": "Москва",
+            "keystr": "опыт работы с фреймворком (одним из: Celery, FastAPI, Tornado, Flask и др.), с брокерами сообщений (RabbitMQ, Kafka и др.), с SQL и реляционными базами данных, с экосистемой Docker/Docker-compose",
+            "title": "Разработчик Python (Junior)",
+            "link": "https://spb.hh.ru/vacancy/86744458?from=vacancy_search_list&query=python"
+        }
+    ]
+}
