@@ -81,12 +81,21 @@ def vacancy_data(link, keywords=None):
 
 
 
+def manual_exit():
+    print('\n---- Нажата Q --> Прерывание работы \n')
+    global app_terminate
+    app_terminate = True
+
+
+
 
 if __name__ == '__main__':
 
     keywords = '|'.join(KEYWORDS)
     print(keywords)
     re_keywords = re.compile(keywords, flags=re.IGNORECASE)
+
+    keyboard.add_hotkey('q', manual_exit)
 
     site = SITE
     page = 0
@@ -125,11 +134,13 @@ if __name__ == '__main__':
                     print()
                 data.append(res)
 
-            if keyboard.is_pressed('q'):
-                print('Прерывание работы')
-                app_terminate = True
+            if app_terminate:
                 break
-##                exit()
+
+##            if keyboard.is_pressed('q'):
+##                print('Прерывание работы')
+##                app_terminate = True
+##                break
 
         next_page = soup.find("a", attrs = {"data-qa": "pager-next"})
         if next_page:
